@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        p {
+            color: pink;
+        }
+
+        body {
+            background: black;
+        }
+
+        .absent {
+            color: red;
+            background: yellow;
+            border-radius: 10px;
+            margin: 100px 300px 100px 50px;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 22px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .lorem {
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            text-align: justify;
+            margin: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.9;
+            padding: 50px 30px;
+            background-color: antiquewhite;
+            color: black;
+            transition: 0.5s all;
+
+        }
+
+        .lorem:hover {
+            background-color: #00c3ff;
+            cursor: pointer;
+        }
+
+        #chatur {
+            width: 300px;
+
+            border: 2px solid red;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            font-size: 22px;
+        }
+
+        .container {
+            background-color: greenyellow;
+            /* margin: 4rem 0; */
+            /* padding: 2rem; */
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+        }
+
+        .box {
+            border: 1px solid red;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            background-color: rgb(0, 83, 139);
+            color: white;
+        }
+
+        .containerGrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 3fr 3fr 2fr;
+        }
+
+        .containerGrid div {
+            width: full;
+            margin: 12px;
+            padding: 10px;
+            height: full;
+            background-color: red;
+        }
+
+        #one {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        #two {
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        #three {
+            grid-column: 2/4;
+        }
+
+        #six {
+            grid-column: 1/4;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="color: yellow;">I am Travelling</h1>
+    <p>with my friends</p>
+    <p id="chatur">chatur is alwso with us </p>
+    <p class="absent">mahindar is not</p>
+    <p class="absent">vijay is also not</p>
+    <p class="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, qui excepturi sunt fugiat nulla,
+        quas, modi earum
+        itaque libero voluptate aliquid minima? Consectetur natus repudiandae alias, id eius eos inventore omnis vel
+        iti similique nam, repellendus sint numquam excepturi corporis illum? Eum, eveniet
+        soluta quidem voluptate asperiores natus aliquid libero possimus perferendis ad accusamus distinctio nesciunt
+        error odio perspiciatis voluptates quos porro recusandae dolores, laboriosam alias reprehenderit iure
+        voluptatibus.</p>
+
+
+    <div class="container ">
+
+    </div>
+
+
+    <div class="containerGrid">
+        <div id="one" class="box2">box1</div>
+        <div id="two" class="box2"></div>
+        <div id="three" class="box2"></div>
+        <div id="four" class="box2"></div>
+        <div id="fieve" class="box2"></div>
+        <div id="six" class="box2"></div>
+    </div>
+</body>
+
+</html>
